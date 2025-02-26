@@ -1,0 +1,171 @@
+@import '../_mixin.scss';
+*{
+    margin: 0;
+    padding: 0;  
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 378.61vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", serif;
+    
+}
+
+header{
+    width: 100vw;
+    height: 11.02vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    div{
+        width: 68.75vw;
+        height: 7.5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 10.16vw;
+            height: 3.7vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            img{
+                width: 2vw;
+                height: 3.7vh;
+            }
+            h1{
+                width: 8.07vw;
+                height: 3.7vh;
+                color: #1F1A17;
+                @include text-style (3rem, 800);
+            }
+        }
+        div{
+            width: 55.47vw;
+            height: 3.7vh;
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+            nav{
+                width: 30.47vw;
+                height: 1.85vh;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    color: #222222;
+                    display: flex;
+                    text-align: center;
+                    text-decoration: none;
+                    @include text-style (1.6rem, 500);
+                }
+                
+            }
+            div{
+                width: 16.35vw;
+                height: 3.7vh;
+                .b_1{
+                    width: 8.9vw;
+                    height: 3.7vh;
+                    border-radius: 2rem;
+                    border: none;
+                    @include text-style (1.6rem, 600);
+                    background-color: #F2F0FE;
+                    color: #1DBF73;
+                }
+                .b_2{
+                    width: 5.89vw;
+                    height: 3.7vh;
+                    border-radius: 2rem;
+                    border: none;
+                    @include text-style (1.6rem, 600);
+                    background-color: #1DBF73;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+main{
+    width: 100vw;
+    height: 325.1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section_1{
+        width: 68.91vw;
+        height: 58.3vh;
+        display: flex;
+        align-items: center;
+        .left{
+            width: 31.04vw;
+            height: 48.8vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .top{
+                width: 31.04vw;
+                height: 15.37vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .p1_s1{
+                    width: 31.04vw;
+                    height: 8.15vh;
+                    @include text-style(3.6rem, 700);
+                    .spanp1_s1{
+                        color: #1DBF73;
+                    }
+                }
+                .p2_s1{
+                    width: 27.76vw;
+                    height: 4.44vh;
+                    @include text-style(2rem, 500)
+                }
+            }
+            .mid{
+                width: 27.9vw;
+                height: 5.56vh;
+                border-radius: 50px;
+                background-color: #F2F0FE;
+                input{
+                    width: 19.69vw;
+                    height: 5.56vh;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    border: none;
+                    background-color: #F2F0FE;
+                    @include text-style(1.6rem, 500);
+                    color: #656084;
+                }
+                button{
+                    width: 8.02vw;
+                    height: 5.56vh;
+                    border-radius: 50px;
+                    border: #F2F0FE;
+                    background-color: #FBA457;
+                    @include text-style(1.6rem, 700);
+                    color: #F6FAFD;
+                }   
+            }
+            .bot{
+                width: 31.04vw;
+                height: 16.61vh;
+                .p3_s1{
+                    width: 15vw;
+                    height: 1.85vh;
+                    @include text-style(1.6rem, 500);
+                }
+                .buttons_grid{
+                    
+                }
+            }
+        }
+    }
+}
