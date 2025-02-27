@@ -110,6 +110,7 @@ main .section_1 {
   width: 68.91vw;
   height: 58.3vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 main .section_1 .left {
@@ -182,4 +183,46 @@ main .section_1 .left .bot .p3_s1 {
   font-family: "Montserrat", serif;
   font-weight: 500;
   font-size: 1.6rem;
+}
+main .section_1 .left .bot .buttons_grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+main .section_1 .left .bot .buttons_grid:first-child {
+  width: 9.43vw;
+  height: 3.43vh;
+}
+main .section_1 .left .bot .buttons_grid:nth-child(2) {
+  width: 6.46vw;
+  height: 3.46vh;
+}
+main .section_1 .left .bot .buttons_grid:nth-child(3) {
+  width: 5vw;
+  height: 3.46vh;
+}
+main .section_1 .left .bot .buttons_grid:nth-child(4) {
+  width: 10.21vw;
+  height: 3.46vh;
+}
+main .section_1 .left .bot .buttons_grid:nth-child(5) {
+  width: 9.69vw;
+  height: 3.46vh;
+}
+main .section_1 .left .bot .buttons_grid:nth-child(6) {
+  width: 8.125vw;
+  height: 3.46vh;
+}
+main .section_1 .left .bot .buttons_grid:nth-child(7) {
+  width: 9.43vw;
+  height: 3.46vh;
+}
+main .section_1 .left .bot .buttons_grid:last-child {
+  width: 7.7vw;
+  height: 3.46vh;
+}
+main .section_1 .right {
+  width: 31.4vw;
+  height: 58.33vh;
 }/*# sourceMappingURL=Main.css.map */
