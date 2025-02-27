@@ -1,0 +1,8 @@
+@mixin test{
+    background-color: aqua;
+}
+@mixin text_style($f-s, $f-w){
+        font-family: "Montserrat",serif;
+        font-weight: $f-w;
+        font-size: $f-s ;
+}
