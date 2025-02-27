@@ -42,7 +42,7 @@ header{
                 width: 8.07vw;
                 height: 3.7vh;
                 color: #1F1A17;
-                @include text-style (3rem, 800);
+                @include text_style (3rem, 800);
             }
         }
         div{
@@ -62,7 +62,7 @@ header{
                     display: flex;
                     text-align: center;
                     text-decoration: none;
-                    @include text-style (1.6rem, 500);
+                    @include text_style (1.6rem, 500);
                 }
                 
             }
@@ -74,7 +74,7 @@ header{
                     height: 3.7vh;
                     border-radius: 2rem;
                     border: none;
-                    @include text-style (1.6rem, 600);
+                    @include text_style (1.6rem, 600);
                     background-color: #F2F0FE;
                     color: #1DBF73;
                 }
@@ -83,7 +83,7 @@ header{
                     height: 3.7vh;
                     border-radius: 2rem;
                     border: none;
-                    @include text-style (1.6rem, 600);
+                    @include text_style (1.6rem, 600);
                     background-color: #1DBF73;
                     color: white;
                 }
@@ -119,7 +119,7 @@ main{
                 .p1_s1{
                     width: 31.04vw;
                     height: 8.15vh;
-                    @include text-style(3.6rem, 700);
+                    @include text_style(3.6rem, 700);
                     .spanp1_s1{
                         color: #1DBF73;
                     }
@@ -127,7 +127,7 @@ main{
                 .p2_s1{
                     width: 27.76vw;
                     height: 4.44vh;
-                    @include text-style(2rem, 500)
+                    @include text_style(2rem, 500)
                 }
             }
             .mid{
@@ -142,7 +142,7 @@ main{
                     border-bottom-left-radius: 50px;
                     border: none;
                     background-color: #F2F0FE;
-                    @include text-style(1.6rem, 500);
+                    @include text_style(1.6rem, 500);
                     color: #656084;
                 }
                 button{
@@ -151,54 +151,109 @@ main{
                     border-radius: 50px;
                     border: #F2F0FE;
                     background-color: #FBA457;
-                    @include text-style(1.6rem, 700);
+                    @include text_style(1.6rem, 700);
                     color: #F6FAFD;
                 }   
             }
             .bot{
-                width: 31.04vw;
+                width: 27.71vw;
                 height: 16.61vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 .p3_s1{
                     width: 15vw;
                     height: 1.85vh;
                     @include text-style(1.6rem, 500);
                 }
                 .buttons_grid{
-                    display: grid;
-                    grid-template-columns: repeat(3, auto);
-                    grid-template-rows: auto;
-                    gap: 20px;
-                    &:first-child{
-                        width: 9.43vw;
+                    width: 100%;
+                    height: 13.98vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .row_1{
+                        width: 22.97vw;
                         height: 3.43vh;
+                        display: flex;
+                        justify-content: space-between;
+                        .button_1{
+                            width: 9.43vw;
+                            height: 3.43vh;
+                            border-radius: 50px;
+                            border: solid 1px lightgray;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                        }
+                        .button_2{
+                            width: 6.46vw;
+                            height: 3.46vh;
+                            border-radius: 50px;
+                            border: solid 1px lightgray;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                        }
+                        .button_3{
+                            width: 5vw;
+                            height: 3.46vh;
+                            border-radius: 50px;
+                            border: solid 1px lightgray;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                        }
                     }
-                    &:nth-child(2){
-                        width: 6.46vw;
-                        height: 3.46vh;
+                    .row_2{
+                        width: 20.94vw;
+                        height: 3.43vh;
+                        display: flex;
+                        justify-content: space-between;
+                        .button_4{
+                            width: 10.21vw;
+                            height: 3.46vh;
+                            border-radius: 50px;
+                            border: solid 1px lightgray;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                        }
+                        .button_5{
+                            width: 9.69vw;
+                            height: 3.46vh;
+                            border-radius: 50px;
+                            border: solid 1px lightgray;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                        }
                     }
-                    &:nth-child(3){
-                        width: 5vw;
-                        height: 3.46vh;
-                    }
-                    &:nth-child(4){
-                        width: 10.21vw;
-                        height: 3.46vh;
-                    }
-                    &:nth-child(5){
-                        width: 9.69vw;
-                        height: 3.46vh;
-                    }
-                    &:nth-child(6){
-                        width: 8.125vw;
-                        height: 3.46vh;
-                    }
-                    &:nth-child(7){
-                        width: 9.43vw;
-                        height: 3.46vh;
-                    }
-                    &:last-child{
-                        width: 7.7vw;
-                        height: 3.46vh;
+                    .row_3{
+                        width: 100%;
+                        height: 3.43vh;
+                        display: flex;
+                        justify-content: space-between;
+                        .button_6{
+                            width: 8.125vw;
+                            height: 3.46vh;
+                            border-radius: 50px;
+                            border: solid 1px lightgray;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                        }
+                        .button_7{
+                            width: 9.43vw;
+                            height: 3.46vh;
+                            border-radius: 50px;
+                            border: solid 1px lightgray;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                        }
+                        .button_8{
+                            width: 7.7vw;
+                            height: 3.46vh;
+                            border-radius: 50px;
+                            color: #FBA457;
+                            background-color: white;
+                            @include text_style(1.4rem, 400);
+                            border: solid 1px #FBA457;
+                        }
                     }
                 }
             }
@@ -206,6 +261,95 @@ main{
         .right{
             width: 31.4vw;
             height: 58.33vh;
+        }
+    }
+    .section_2{
+        width: 68.75vw;
+        height: 59.91vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top{
+            width: 12.92vw;
+            height: 2.69vh;
+            @include text-style(2.4rem, 600);
+        }
+        .bottom{
+            width: 100%;
+            height: 52.78vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.56vw;
+            .cad{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 20px;
+                border: solid 1px lightgray;
+                background-color: white;
+                transition: 0.3s ease, box-shadow 0.3s ease;
+                .cad_top{
+                    width: 19.79vw;
+                    height: 4.07vh;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img{
+                        width: 2.29vw;
+                        height: 4.07vh;
+                    }
+                    p{
+                        width: 16.46vw;
+                        @include text_style(1.8rem, 600);
+                    }
+                }
+                .cad_midle{
+                    width: 19.79vw;
+                    height: 7.87vh;
+                    p{
+                        @include text_style(1.4rem, 400);
+                    }
+                }
+                button{
+                    width: 19.78vw;
+                    height: 3.796vh;
+                    border-radius: 50px;
+                    border: solid 1px #1DBF73;
+                    color:#1DBF73;
+                    background-color: white;
+                    transition: 0.3s;
+                    @include text_style(1.4rem, 500);
+                }
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+                    button{
+                        color:white;
+                        background-color: #1DBF73;
+                    }
+                }
+            }
+            .last_cad{
+                border-radius: 20px;
+                border: solid 1px #F2F0FE;
+                background-color: #F2F0FE;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: #1DBF73;
+                    @include text_style(1.8rem, 600);
+                    transition: 0.3s;
+                }
+                &:hover{
+                    a{
+                        font-size: 1.9rem;
+                    }
+                }
+            }
         }
     }
 }

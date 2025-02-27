@@ -174,8 +174,11 @@ main .section_1 .left .mid button {
   color: #F6FAFD;
 }
 main .section_1 .left .bot {
-  width: 31.04vw;
+  width: 27.71vw;
   height: 16.61vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main .section_1 .left .bot .p3_s1 {
   width: 15vw;
@@ -185,44 +188,209 @@ main .section_1 .left .bot .p3_s1 {
   font-size: 1.6rem;
 }
 main .section_1 .left .bot .buttons_grid {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: auto;
-  gap: 20px;
+  width: 100%;
+  height: 13.98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-main .section_1 .left .bot .buttons_grid:first-child {
+main .section_1 .left .bot .buttons_grid .row_1 {
+  width: 22.97vw;
+  height: 3.43vh;
+  display: flex;
+  justify-content: space-between;
+}
+main .section_1 .left .bot .buttons_grid .row_1 .button_1 {
   width: 9.43vw;
   height: 3.43vh;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-main .section_1 .left .bot .buttons_grid:nth-child(2) {
+main .section_1 .left .bot .buttons_grid .row_1 .button_2 {
   width: 6.46vw;
   height: 3.46vh;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-main .section_1 .left .bot .buttons_grid:nth-child(3) {
+main .section_1 .left .bot .buttons_grid .row_1 .button_3 {
   width: 5vw;
   height: 3.46vh;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-main .section_1 .left .bot .buttons_grid:nth-child(4) {
+main .section_1 .left .bot .buttons_grid .row_2 {
+  width: 20.94vw;
+  height: 3.43vh;
+  display: flex;
+  justify-content: space-between;
+}
+main .section_1 .left .bot .buttons_grid .row_2 .button_4 {
   width: 10.21vw;
   height: 3.46vh;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-main .section_1 .left .bot .buttons_grid:nth-child(5) {
+main .section_1 .left .bot .buttons_grid .row_2 .button_5 {
   width: 9.69vw;
   height: 3.46vh;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-main .section_1 .left .bot .buttons_grid:nth-child(6) {
+main .section_1 .left .bot .buttons_grid .row_3 {
+  width: 100%;
+  height: 3.43vh;
+  display: flex;
+  justify-content: space-between;
+}
+main .section_1 .left .bot .buttons_grid .row_3 .button_6 {
   width: 8.125vw;
   height: 3.46vh;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-main .section_1 .left .bot .buttons_grid:nth-child(7) {
+main .section_1 .left .bot .buttons_grid .row_3 .button_7 {
   width: 9.43vw;
   height: 3.46vh;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-main .section_1 .left .bot .buttons_grid:last-child {
+main .section_1 .left .bot .buttons_grid .row_3 .button_8 {
   width: 7.7vw;
   height: 3.46vh;
+  border-radius: 50px;
+  color: #FBA457;
+  background-color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  border: solid 1px #FBA457;
 }
 main .section_1 .right {
   width: 31.4vw;
   height: 58.33vh;
+}
+main .section_2 {
+  width: 68.75vw;
+  height: 59.91vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section_2 .top {
+  width: 12.92vw;
+  height: 2.69vh;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+main .section_2 .bottom {
+  width: 100%;
+  height: 52.78vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.56vw;
+}
+main .section_2 .bottom .cad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  border: solid 1px lightgray;
+  background-color: white;
+  transition: 0.3s ease, box-shadow 0.3s ease;
+}
+main .section_2 .bottom .cad .cad_top {
+  width: 19.79vw;
+  height: 4.07vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section_2 .bottom .cad .cad_top img {
+  width: 2.29vw;
+  height: 4.07vh;
+}
+main .section_2 .bottom .cad .cad_top p {
+  width: 16.46vw;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+main .section_2 .bottom .cad .cad_midle {
+  width: 19.79vw;
+  height: 7.87vh;
+}
+main .section_2 .bottom .cad .cad_midle p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+main .section_2 .bottom .cad button {
+  width: 19.78vw;
+  height: 3.796vh;
+  border-radius: 50px;
+  border: solid 1px #1DBF73;
+  color: #1DBF73;
+  background-color: white;
+  transition: 0.3s;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+main .section_2 .bottom .cad:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+}
+main .section_2 .bottom .cad:hover button {
+  color: white;
+  background-color: #1DBF73;
+}
+main .section_2 .bottom .last_cad {
+  border-radius: 20px;
+  border: solid 1px #F2F0FE;
+  background-color: #F2F0FE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_2 .bottom .last_cad a {
+  text-decoration: none;
+  color: #1DBF73;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+main .section_2 .bottom .last_cad:hover a {
+  font-size: 1.9rem;
 }/*# sourceMappingURL=Main.css.map */
